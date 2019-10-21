@@ -18,15 +18,17 @@
         <!-- table a header, footer, and caption ??? -->
         <section class="table">
             <br><h2>TABLE</h2>
-                <table border="1px">
-                    <thead style="font-weight: 700">
+                <table border="1px" style="border-collapse: collapse;width:100%; font-family: arial">
+                    <caption>Denver vs Chicago</caption>
+                    <thead style="font-weight: 700; background: #c7c7c7; text-align: center">
                         <tr>
-                            <td colspan="6" style="text-align: center">Scores by quarter</td>
+                            <td colspan="6" style="text-align: center; background: #2c2b2b; color: #FFF">Scores by quarter</td>
                         </tr>
                         <tr>
                             <td rowspan="2">Team Name</td>
                             <td colspan="2">First Half</td>
                             <td colspan="2">Second Half</td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>Q1</td>
@@ -66,6 +68,7 @@
                     </tfoot>
                 </table>
         </section>
+    
 <!--Part 3: Team list -->
         <section class="list">
             <br><h2>LIST</h2>
@@ -86,9 +89,7 @@
                     </ul>
                 </li>
             </ul>
-
             <br>
-
             <ul>
                 <li>
                     <img src="https://freepngimg.com/thumb/football/23554-6-chicago-bears-file.png" alt="Bears Logo" style="width: 100px">
@@ -112,41 +113,46 @@
         <h2>FORM</h2>
 
         <form>
+            <!-- first and last name -->
             First: 
             <input type="text" name="firstName" placeholder="First Name">
               Last: 
             <input type="text" name="lastName" placeholder="Last Name">
-            <br>
-           <!-- Favorite Sport:<br>
-            <input type="" -->
-            
+            <br><br>
+
+             <!-- drop down -->
             <select>
                 <option value="soccer">Soccer</option>
                 <option value="football">Football</option>
                 <option value="baseball">Baseball</option>
                 <option value="hockey">Hockey</option>
             </select>   
-
-            <br>
+            <br><br>
             
+            <!-- check boxes -->
             I have:
-            <input type="checkbox" name="activity">Attended
-            <input type="checkbox" name="activity">Played
-            <input type="checkbox" name="activity">Coached
-            <input type="checkbox" name="activity">Bet on this sport.
+            <input type="checkbox" name="activity" id="attended">
+            <label for="attended">Attended</label>
+            <input type="checkbox" name="activity" id="played">
+            <label for="played">Played</label>
+            <input type="checkbox" name="activity" id="coached">
+            <label for="coached">Coached</label>
+            <input type="checkbox" name="activity" id="bet">
+            <label for="bet">Bet on this sport</label>
+            <br><br>
 
-            <br>
-
+            <!-- radio buttons -->
             For this sport I prefer the:
-            
-            <input type="radio" name="league">Amateur
-            <input type="radio" name="league">College
-            <input type="radio" name="league">Professional
+            <input type="radio" name="league" id="amateur">
+            <label for="amateur">Amateur</label>
+            <input type="radio" name="league" id="college">
+            <label for="college">College</label>
+            <input type="radio" name="league" id="professional">
+            <label for="professional">Professional</label>
+            <br><br>
 
-            <br>
-
+            <!-- submit -->
             <input type="submit" value="Submit Query">
-
         </form>
 
         </body>
